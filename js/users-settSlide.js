@@ -7,6 +7,7 @@ const infoServicesSwiper = new Swiper('.header-center', {
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
+        type: 'bullets',
         clickable: true,
     },
     breakpoints: {
@@ -18,11 +19,6 @@ const infoServicesSwiper = new Swiper('.header-center', {
                 draggable: true,
             }
         }
-    },
-    // Navigation arrows
-    navigation: {
-        nextEl: '.header-center-button-next',
-        prevEl: '.header-center-button-prev',
     },
     // And if we need scrollbar
     scrollbar: {

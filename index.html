@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MagicStone</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/swiper-bundle/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -40,7 +41,7 @@
                     </nav>
                     <div class="header-search">
                         <form action="#" class="form-search">
-                            <input class="form-search__input" type="text" value="поиск">
+                            <input class="form-search__input" type="text" placeholder="поиск">
                             <button class="form-search__btn">
     
                             </button>
@@ -87,11 +88,10 @@
                     </div>
                     <div class="header-slide swiper-slide"></div>
                     <div class="header-slide swiper-slide"></div>
-                </div>
-                <div class="swiper-button-prev header-center-button-prev"></div>
-                <div class="swiper-button-next header-center-button-next"></div>
+                </div>    
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-
         </div>
     </header>
     <main>
@@ -155,7 +155,9 @@
                                 <div class="our-objects__card-blur">
                                     <img src="/img/private-house-village-Solnechnoye.jpg" alt='Частный дом в поселении "Солнечное"' class="our-objects__card-img our-objects__card-img__blur">
                                 </div>
-                                <img src="/img/private-house-village-Solnechnoye.jpg" alt='Частный дом в поселении "Солнечное"' class="our-objects__card-img">
+                                <div class="our-objects__card-img__container">
+                                    <img src="/img/private-house-village-Solnechnoye.jpg" alt='Частный дом в поселении "Солнечное"' class="our-objects__card-img">
+                                </div>
                                 <div class="our-objects__card-desc">
                                     <h3 class="card-desc-title">Частный дом в поселении "Солнечное"</h3>
                                     <p class="card-desc-text">
@@ -169,7 +171,9 @@
                                 <div class="our-objects__card-blur">
                                     <img src="/img/restaurant-Tilda-Food-and-Bar.jpg" alt='Частный дом в поселении "Солнечное"' class="our-objects__card-img our-objects__card-img__blur">
                                 </div>
-                                <img src="/img/restaurant-Tilda-Food-and-Bar.jpg" alt='Частный дом в поселении "Солнечное"' class="our-objects__card-img">
+                                <div class="our-objects__card-img__container">
+                                    <img src="/img/restaurant-Tilda-Food-and-Bar.jpg" alt='Частный дом в поселении "Солнечное"' class="our-objects__card-img">
+                                </div>
                                 <div class="our-objects__card-desc">
                                     <h3 class="card-desc-title">Ресторан Tilda Food & Bar</h3>
                                     <p class="card-desc-text">
@@ -183,7 +187,9 @@
                                 <div class="our-objects__card-blur">
                                     <img src="/img/the-residential-complex-literator-Moscow-Khamovniki.jpg" alt='Частный дом в поселении "Солнечное"' class="our-objects__card-img our-objects__card-img__blur">
                                 </div>
-                                <img src="/img/the-residential-complex-literator-Moscow-Khamovniki.jpg" alt='Частный дом в поселении "Солнечное"' class="our-objects__card-img">
+                                <div class="our-objects__card-img__container card-column-img-container">
+                                    <img src="/img/the-residential-complex-literator-Moscow-Khamovniki.jpg" alt='Частный дом в поселении "Солнечное"' class="our-objects__card-img">
+                                </div>
                                 <div class="our-objects__card-desc">
                                     <h3 class="card-desc-title">Жилой комплекс "Литератор" Москва, Хамовники.</h3>
                                     <p class="card-desc-text">
@@ -224,12 +230,87 @@
                         </div>
                     </div>
                     <div class="contacts-map">
-                        <img src="/img/map.png" alt="" class="contacts-map__img">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8a405f21384f9e76b42e403a4b29f68ba29117ddc9e98c72fe9da95035139a4e&amp;source=constructor" width="900" height="467" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-contacts footer-list-container">
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <a href="tel:+7 (495) 722-88-00" class="footer-list-item-link">
+                              <span class="footer-list-item__icon">
+                                <svg class="icon icon-phone">
+                                    <use xlink:href="/img/icons/sprite.svg#phone"></use>
+                                </svg>
+                              </span>
+                              <span class="footer-list-item__text">+7 (495) 722-88-00</span>
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="tel:+7 (495) 116-58-38" class="footer-list-item-link">
+                              <span class="footer-list-item__icon"></span>+7 (495) 116-58-38
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="mailto:magmatika08@gmail.com" class="footer-list-item-link">
+                                <span class="footer-list-item__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="/img/icons/sprite.svg#mail"></use>
+                                    </svg>
+                                </span>
+                                <span class="footer-list-item__text">magmatika08@gmail.com</span>
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="" class="footer-list-item-link">
+                                <span class="footer-list-item__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="/img/icons/sprite.svg#share"></use>
+                                    </svg>
+                                </span>
+                                <svg class="icon icon-inst">
+                                    <use xlink:href="/img/icons/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="" class="footer-list-item-link">
+                                <span class="footer-list-item__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="/img/icons/sprite.svg#map"></use>
+                                    </svg>
+                                </span>
+                                <span class="footer-list-item__text">
+                                    Москва, Нахимовский пр-т, 24,
+                                    ЦДИ "Экспострой", пав. 3, стенд 433
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-list-container">
+                    <h3 class="footer-title">Каталог</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">Фасадная плитка</li>
+                        <li class="footer-list-item">Брусчатка</li>
+                        <li class="footer-list-item">Тротуарная плитка</li>
+                        <li class="footer-list-item">Ступени</li>
+                        <li class="footer-list-item">Бордюры</li>
+                        <li class="footer-list-item">Строительные смеси</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="text-copyright">© ТПК “Магматика”</p>
+                <a href="#" class="text-copyright link-term-services">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
     <script src="/libs/swiper-bundle/swiper-bundle.min.js"></script>
     <script src="js/users-settSlide.js"></script>
 </body>

@@ -22,6 +22,8 @@
             overflow: hidden
             &:last-child
                 margin-right: 0
+            &:hover img
+                transform: scale(1.2)
             &__img
                 position: absolute
                 top: 0
@@ -30,6 +32,7 @@
                 height: 296px
                 z-index: -1
                 filter: blur(4px)
+                transition: 1.2s
             &__desc
                 position: relative
                 z-index: 1
@@ -42,9 +45,4 @@
                 color: $text-color
             &__text
                 margin-top: 18px
-                font-family: 'Gotham'
-                font-weight: 400
-                font-size: 18px
-                line-height: 22px
-                letter-spacing: 0.05em
-                color: $text-color
+                @extend %text-typography
