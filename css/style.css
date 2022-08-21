@@ -1,0 +1,447 @@
+@charset "UTF-8";
+/*шрифты*/ /*main fonts*/
+@font-face {
+  font-family: "Gotham";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../sass/fonts/Gotham/Gotham-Book.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GothamMedium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../sass/fonts/Gotham/GothamMedium.woff") format("woff2");
+}
+@font-face {
+  font-family: "GothamBold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../sass/fonts/Gotham/Gotham-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GothamBlack";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../sass/fonts/Gotham/Gotham-Black.woff2") format("woff2");
+}
+/*переменные*/
+/*fonts*/
+/*color*/
+/**/
+/*базовые настройки*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "GothamMedium", sans-serif;
+  background-color: white;
+}
+body.noscroll {
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, p, a, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+input, button, textarea {
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #44392E;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+img {
+  object-fit: cover;
+}
+
+/*секции*/
+.header-top {
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-top-container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.header-nav {
+  margin-left: 64px;
+}
+.header-search {
+  margin: 0 64px;
+  padding: 20px 32px;
+  width: 100%;
+  max-width: 651px;
+  border-right: 1px solid #C3C1BF;
+  border-left: 1px solid #C3C1BF;
+}
+.header-phone-link {
+  margin-bottom: 10px;
+}
+.header-actions {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.header-favorites {
+  margin-right: 26px;
+}
+.header-favorites__container {
+  position: relative;
+  display: inline-block;
+}
+.header-favorites__count {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  padding: 1px 5px;
+  font-family: "GothamMedium", sans-serif;
+  font-weight: 500;
+  font-size: 13.5px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #44392E;
+  border-radius: 50%;
+  background-color: #EEC84A;
+}
+.header-cart-mini__container {
+  position: relative;
+  display: inline-block;
+}
+.header-cart-mini__count {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  padding: 1px 5px;
+  font-family: "GothamMedium", sans-serif;
+  font-weight: 500;
+  font-size: 13.5px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #44392E;
+  border-radius: 50%;
+  background-color: #EEC84A;
+}
+.header-center {
+  max-width: 1920px;
+  width: 100%;
+  height: 579px;
+  position: relative;
+}
+.header-center::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.header-wrapper__slide {
+  height: inherit;
+}
+.header-slide {
+  position: relative;
+  background-image: url("../img/header-bg.jpg");
+  background-position: center 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.header-slide__desc {
+  position: absolute;
+  top: 50%;
+  transform: translate(240px, -50%);
+  display: inline-block;
+  width: 361px;
+  font-family: "GothamBlack";
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.1em;
+  color: white;
+  z-index: 2;
+}
+.header-slide__btn {
+  margin-top: 64px;
+  padding: 33px 70px;
+  font-family: "GothamMedium", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  background: #692F0F;
+  border: 0;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.nav-list-item {
+  margin-right: 48px;
+}
+.nav-list-item:last-child {
+  margin-right: 0;
+}
+
+.list-item-link {
+  font-family: "GothamMedium", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #44392E;
+  text-transform: capitalize;
+}
+.list-item-link:hover {
+  color: #86573D;
+}
+
+.logo {
+  height: 61px;
+  width: 204px;
+  object-fit: contain;
+}
+
+.form-search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+.form-search__input {
+  width: 100%;
+  font-family: "Gotham";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #776F67;
+  border: 0;
+}
+.form-search__btn {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icons/search-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: 0;
+}
+
+.promo-products {
+  padding: 48px 0;
+}
+.promo-products__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.promo-products__img-container {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(251, 246, 244, 0.6);
+}
+.promo-products-item {
+  position: relative;
+  margin-right: 48px;
+  padding: 16px 16px;
+  width: 324px;
+  height: 296px;
+  overflow: hidden;
+}
+.promo-products-item:last-child {
+  margin-right: 0;
+}
+.promo-products-item__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 324px;
+  height: 296px;
+  z-index: -1;
+  filter: blur(4px);
+}
+.promo-products-item__desc {
+  position: relative;
+  z-index: 1;
+}
+.promo-products-item__title {
+  font-family: "GothamMedium", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: #44392E;
+}
+.promo-products-item__text {
+  margin-top: 18px;
+  font-family: "Gotham";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #44392E;
+}
+
+.our-objects {
+  padding: 64px 0;
+  background-color: #FBF6F4;
+}
+.our-objects-content {
+  margin-top: 68px;
+  display: flex;
+}
+.our-objects__card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background-color: #252525;
+}
+.our-objects__card:last-child {
+  margin-bottom: 0;
+}
+.our-objects__card-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.our-objects__card-img {
+  width: 372px;
+  height: 460px;
+  z-index: 1;
+}
+.our-objects__card-img__blur {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  filter: blur(9px);
+}
+.our-objects__card-desc {
+  position: relative;
+  padding: 32px 0 0 16px;
+  z-index: 1;
+}
+.our-objects__card-column {
+  margin-left: 32px;
+}
+.our-objects__card-column > .our-objects__card {
+  flex-direction: column;
+}
+.our-objects__card-column > .our-objects__card > .our-objects__card-img {
+  width: 560px;
+  height: 373px;
+}
+
+.card-list {
+  margin-bottom: 30px;
+  max-width: 848px;
+}
+.card-column {
+  max-width: 560px;
+  height: 100%;
+}
+.card-desc-title {
+  font-family: "GothamBold";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.card-desc-text {
+  margin-top: 20px;
+  font-family: "Gotham";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.contacts {
+  padding: 64px 0;
+}
+.contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-list {
+  margin: 16px 0;
+}
+.contacts-list-item {
+  margin-top: 12px;
+  font-family: "GothamMedium", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #44392E;
+}
+.contacts-list-item:first-child {
+  margin-top: 0;
+}
+.contacts-map__img {
+  width: 900px;
+  height: 467px;
+}
+
+/*адаптив/медиа-запросы*/
+@media (max-width: 1536px) {
+  .logo {
+    width: 180px;
+  }
+  .header-search {
+    max-width: 351px;
+  }
+  .header-nav {
+    margin-left: 34px;
+  }
+  .header-search {
+    margin: 0 34px;
+  }
+  .header-slide__btn {
+    padding: 33px 67px;
+  }
+  .nav-list-item {
+    margin-right: 34px;
+  }
+}
