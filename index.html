@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-</body>
 </html> 
     <header class="header">
         <div class="header-wrapper">
             <div class="header-top-container">
                 <div class="header-top">
                     <div class="header-logo">
-                        <img src="img/icons/logo.png" alt="MagicStone" class="logo">
+                        <a href="/" class="logo-link" style="display: inline-block;">
+                            <svg class="logo">
+                                <use xlink:href="img/icons/sprite.svg#logo"></use>
+                            </svg>
+                        </a>
                     </div>
                     <nav class="header-nav">
                         <ul class="nav-list">
@@ -113,6 +115,27 @@
                                 </div>
                             </a>
                         </div>
+                    </div>
+                    <div class="header-mobile-menu">
+                        <nav class="header-nav">
+                            <ul class="nav-list">
+                                <li class="nav-list-item">
+                                    <a href="" class="list-item-link">Главная</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="" class="list-item-link">Каталог</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="" class="list-item-link">Доставка</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="" class="list-item-link">О нас</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="" class="list-item-link">контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>                
@@ -349,7 +372,7 @@
             </div>
             <div class="footer-bottom">
                 <p class="text-copyright">© ТПК “Магматика”</p>
-                <a href="#" class="text-copyright link-term-services">Пользовательское соглашение</a>
+                <a href="user-agreement.html" class="text-copyright link-term-services">Пользовательское соглашение</a>
             </div>
         </div>
     </footer>

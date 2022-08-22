@@ -38,3 +38,28 @@ img
     letter-spacing: 0.05em
     color: $text-color
     cursor: pointer
+.breadcrumbs
+    margin-top: 32px
+    &-list
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        &-item
+            padding: 4px 0
+            display: flex
+            align-items: center
+            &:first-child
+                &::before
+                    content: none
+            &::before
+                content: "—"
+                float: left
+                margin: 0 6px
+                color: #776F67
+            &-link
+                font-family: 'Gotham'
+                font-weight: 400
+                font-size: 12px
+                line-height: 14px
+                letter-spacing: 0.05em
+                color: #776F67
