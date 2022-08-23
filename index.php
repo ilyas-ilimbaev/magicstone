@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MagicStone</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/swiper-bundle/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-</html> 
+<?  
+    $link = '
+        <link rel="stylesheet" href="css/swiper-bundle/swiper-bundle.min.css" />
+    ';
+    include($_SERVER['DOCUMENT_ROOT'] . '/blocks/head.php');
+?>
     <header class="header">
         <div class="header-wrapper">
             <div class="header-top-container">
@@ -55,7 +48,7 @@
                                     <div class="search-list-item__parameter">
                                         <span class="parameter-title">Cerrad Loft brick, Cardamon</span>
                                         <span class="parameter-desc">Клинкерная плитка</span>
-                                        <span class="parameter-price">2 214,00 руб./м²</span>
+                                        <span class="parameter-price">1 714,00 руб./м²</span>
                                     </div>
                                 </div>
                             </a>
@@ -65,7 +58,7 @@
                                     <div class="search-list-item__parameter">
                                         <span class="parameter-title">Cerrad Loft brick, Cardamon</span>
                                         <span class="parameter-desc">Клинкерная плитка</span>
-                                        <span class="parameter-price">2 214,00 руб./м²</span>
+                                        <span class="parameter-price">1 714,00 руб./м²</span>
                                     </div>
                                 </div>
                             </a>
@@ -75,7 +68,7 @@
                                     <div class="search-list-item__parameter">
                                         <span class="parameter-title">Cerrad Loft brick, Cardamon</span>
                                         <span class="parameter-desc">Клинкерная плитка</span>
-                                        <span class="parameter-price">2 214,00 руб./м²</span>
+                                        <span class="parameter-price">1 714,00 руб./м²</span>
                                     </div>
                                 </div>
                             </a>
@@ -85,7 +78,7 @@
                                     <div class="search-list-item__parameter">
                                         <span class="parameter-title">Cerrad Loft brick, Cardamon</span>
                                         <span class="parameter-desc">Клинкерная плитка</span>
-                                        <span class="parameter-price">2 214,00 руб./м²</span>
+                                        <span class="parameter-price">1 714,00 руб./м²</span>
                                     </div>
                                 </div>
                             </a>
@@ -301,81 +294,9 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-wrapper">
-                <div class="footer-contacts footer-list-container">
-                    <ul class="footer-list">
-                        <li class="footer-list-item">
-                            <a href="tel:+7 (495) 722-88-00" class="footer-list-item-link">
-                              <span class="footer-list-item__icon">
-                                <svg class="icon icon-phone">
-                                    <use xlink:href="img/icons/sprite.svg#phone"></use>
-                                </svg>
-                              </span>
-                              <span class="footer-list-item__text">+7 (495) 722-88-00</span>
-                            </a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="tel:+7 (495) 116-58-38" class="footer-list-item-link">
-                              <span class="footer-list-item__icon"></span>+7 (495) 116-58-38
-                            </a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="mailto:magmatika08@gmail.com" class="footer-list-item-link">
-                                <span class="footer-list-item__icon">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#mail"></use>
-                                    </svg>
-                                </span>
-                                <span class="footer-list-item__text">magmatika08@gmail.com</span>
-                            </a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="" class="footer-list-item-link">
-                                <span class="footer-list-item__icon">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#share"></use>
-                                    </svg>
-                                </span>
-                                <svg class="icon icon-inst">
-                                    <use xlink:href="img/icons/sprite.svg#instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="" class="footer-list-item-link">
-                                <span class="footer-list-item__icon">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#map"></use>
-                                    </svg>
-                                </span>
-                                <span class="footer-list-item__text">
-                                    Москва, Нахимовский пр-т, 24,
-                                    ЦДИ "Экспострой", пав. 3, стенд 433
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-list-container">
-                    <h3 class="footer-title">Каталог</h3>
-                    <ul class="footer-list">
-                        <li class="footer-list-item">Фасадная плитка</li>
-                        <li class="footer-list-item">Брусчатка</li>
-                        <li class="footer-list-item">Тротуарная плитка</li>
-                        <li class="footer-list-item">Ступени</li>
-                        <li class="footer-list-item">Бордюры</li>
-                        <li class="footer-list-item">Строительные смеси</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="text-copyright">© ТПК “Магматика”</p>
-                <a href="user-agreement.html" class="text-copyright link-term-services">Пользовательское соглашение</a>
-            </div>
-        </div>
-    </footer>
+    <?php
+        include('blocks/footer.php');
+    ?>
     <script src="libs/swiper-bundle/swiper-bundle.min.js"></script>
     <script src="js/users-settSlide.js"></script>
 </body>

@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/*шрифты*/ /*main fonts*/
+@font-face {
+  font-family: "Gotham";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../sass/fonts/Gotham/Gotham-Book.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GothamMedium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../sass/fonts/Gotham/GothamMedium.woff") format("woff2");
+}
+@font-face {
+  font-family: "GothamBold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../sass/fonts/Gotham/Gotham-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GothamBlack";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../sass/fonts/Gotham/Gotham-Black.woff2") format("woff2");
+}
+/*переменные*/
+/*fonts*/
+/*color*/
+/**/
+.spec-el-text__name, .spec-el-text__value, .productCard__btn-favorites, .productCard__btn-basket, .productCard__input-count, .productCard-subtitle {
+  font-family: "Gotham";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #44392E;
+  cursor: pointer;
+}
+
+/*карточка товара*/
+.productPage {
+  margin: 64px 0 88px 0;
+}
+
+.productCard-title {
+  font-family: "GothamMedium", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: #44392E;
+}
+.productCard-subtitle {
+  color: #776F67;
+  cursor: inherit;
+}
+.productCard-price {
+  margin-top: 16px;
+  font-family: "GothamBold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #44392E;
+}
+.productCard__add-basket {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+.productCard__product-count {
+  position: relative;
+  margin-right: 16px;
+  width: 80px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productCard__product-count::before, .productCard__product-count::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  right: 0;
+  background-color: #44392E;
+}
+.productCard__product-count::before {
+  top: 0;
+  height: 25px;
+}
+.productCard__product-count::after {
+  bottom: 0;
+  height: 25px;
+}
+.productCard__input-count {
+  padding-left: 18px;
+  width: 80px;
+  height: 50px;
+  border: 2px solid #44392E;
+}
+.productCard__btn-basket {
+  margin-left: 16px;
+  padding: 14px 12px;
+  background-color: #EEC84A;
+  border: 0;
+}
+.productCard__btn-favorites {
+  padding: 14px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 324px;
+  width: 100%;
+  border: 1px solid #44392E;
+  background-color: transparent;
+}
+.productCard__btn-favorites > .icon {
+  margin-right: 8px;
+  width: 19px;
+  height: 17px;
+}
+.productCard-info {
+  padding-top: 16px;
+}
+.productCard-info__actions {
+  margin: 33px 0;
+}
+.productCard-info__spec-el {
+  margin-bottom: 20px;
+}
+.productCard-info__spec-el:last-child {
+  margin: 0;
+}
+.productCard-link-product {
+  margin-right: 32px;
+  width: 285.37px;
+}
+.productCard-link-product:last-child {
+  margin-right: 0px;
+}
+.productCard-Small__img {
+  margin-bottom: 14px;
+  width: 285.37px;
+  height: 285.37px;
+  object-fit: cover;
+}
+.productCard-Small__info-name {
+  font-family: "Gotham";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #44392E;
+}
+.productCard-Small__info-price {
+  margin-top: 8px;
+  font-family: "GothamMedium", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #44392E;
+}
+
+.productPage-subSectionContainer {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+}
+.productPage-subSectionContainer-title {
+  font-family: "GothamBold";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.05em;
+  color: #44392E;
+}
+
+.product-similar {
+  margin: 48px 0 60px 0;
+}
+.spec-el-text {
+  margin-top: 10px;
+}
+.spec-el-text__name {
+  margin-right: 10px;
+}

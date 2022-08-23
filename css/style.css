@@ -28,6 +28,16 @@
 /*fonts*/
 /*color*/
 /**/
+.footer-list-item-link, .footer-list-item, .footer-title, .contacts-list-item, .card-desc-text, .promo-products-item__text, .form-search__input, .list-item-link {
+  font-family: "Gotham";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #44392E;
+  cursor: pointer;
+}
+
 /*базовые настройки*/
 * {
   box-sizing: border-box;
@@ -74,16 +84,6 @@ ul {
 
 img {
   object-fit: cover;
-}
-
-.footer-list-item-link, .footer-list-item, .footer-title, .contacts-list-item, .card-desc-text, .promo-products-item__text, .form-search__input, .list-item-link {
-  font-family: "Gotham";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.05em;
-  color: #44392E;
-  cursor: pointer;
 }
 
 .breadcrumbs {
