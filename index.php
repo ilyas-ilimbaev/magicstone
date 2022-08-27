@@ -131,7 +131,7 @@
                         </nav>
                     </div>
                 </div>
-            </div>                
+            </div>
             <div class="header-center swiper">
                 <div class="swiper-wrapper header-wrapper__slide">
                     <div class="header-slide swiper-slide">

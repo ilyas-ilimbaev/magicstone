@@ -40,13 +40,21 @@
         &::before, &::after
             content: ""
             position: absolute
-            width: 21px
             right: 0
+            width: 21px
+            display: flex
+            justify-content: center
+            align-items: center
+            text-align: center
+            color: #fff
             background-color: #44392E
+            cursor: pointer
         &::before
+            content: "+"
             top: 0
             height: 25px
         &::after
+            content: "-"
             bottom: 0
             height: 25px
     &__input-count
@@ -90,6 +98,8 @@
         width: 285.37px
         &:last-child
             margin-right: 0px
+    &-BiG
+        display: flex
     &-Small
         &__img
             margin-bottom: 14px

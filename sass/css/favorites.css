@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/*шрифты*/ /*main fonts*/
+@font-face {
+  font-family: "Gotham";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../sass/fonts/Gotham/Gotham-Book.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GothamMedium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../sass/fonts/Gotham/GothamMedium.woff") format("woff2");
+}
+@font-face {
+  font-family: "GothamBold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../sass/fonts/Gotham/Gotham-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GothamBlack";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../sass/fonts/Gotham/Gotham-Black.woff2") format("woff2");
+}
+/*переменные*/
+/*fonts*/
+/*color*/
+/**/
+.productCard-row__productCard-button, .productCard-row__productCard-price, .productCard-row__productCard-title {
+  font-family: "Gotham";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #44392E;
+  cursor: pointer;
+}
+
+/*section favorites*/
+.products {
+  padding: 64px 0 59px 0;
+}
+.products-header {
+  margin-bottom: 64px;
+}
+.section-title {
+  margin-bottom: 8px;
+  font-family: "GothamBold";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.05em;
+  color: #44392E;
+}
+.section-subtitle {
+  font-family: "Gotham";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #44392E;
+}
+
+.productCard-row {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #C4C1BF;
+}
+.productCard-row:last-child {
+  margin-bottom: 0;
+}
+.productCard-row__productCard-left {
+  display: flex;
+}
+.productCard-row__productCard-img {
+  margin-right: 16px;
+  width: 96px;
+  height: 96px;
+}
+.productCard-row__productCard-title {
+  font-family: #44392E;
+  font-weight: 500;
+}
+.productCard-row__productCard-text {
+  font-family: "Gotham";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: #44392E;
+}
+.productCard-row__productCard-button {
+  padding: 10px 18px;
+  background-color: #EEC84A;
+  border: 0;
+}

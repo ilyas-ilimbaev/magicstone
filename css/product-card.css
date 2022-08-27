@@ -81,15 +81,23 @@
 .productCard__product-count::before, .productCard__product-count::after {
   content: "";
   position: absolute;
-  width: 21px;
   right: 0;
+  width: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
   background-color: #44392E;
+  cursor: pointer;
 }
 .productCard__product-count::before {
+  content: "+";
   top: 0;
   height: 25px;
 }
 .productCard__product-count::after {
+  content: "-";
   bottom: 0;
   height: 25px;
 }
@@ -138,6 +146,9 @@
 }
 .productCard-link-product:last-child {
   margin-right: 0px;
+}
+.productCard-BiG {
+  display: flex;
 }
 .productCard-Small__img {
   margin-bottom: 14px;

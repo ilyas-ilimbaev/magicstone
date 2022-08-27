@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MagicStone</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper-bundle/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/product-card.css">
+    <link rel="stylesheet" href="css/swiper-slider.css">
 </head>
 <body>
 </html>
@@ -32,6 +34,79 @@
         <section class="productPage">
             <div class="container">
                 <div class="productCard-BiG">
+                    <div class="productCard-slider">
+                        <div class="slider__flex">
+                            <div class="slider__col">
+                                <div class="slider__prev">Prev</div> <!-- Кнопка для переключения на предыдущий слайд -->
+                                <div class="slider__thumbs">
+                                    <div class="swiper-container"> <!-- Слайдер с превью -->
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="slider__image">
+                                                    <img src="img/cerrad-loft-brick-cardamon-img-1.png" alt=""/>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slider__image">
+                                                    <img src="img/cerrad-loft-brick-cardamon-img-1.png" alt=""/>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slider__image">
+                                                    <img src="img/cerrad-loft-brick-cardamon-img-1.png" alt=""/>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slider__image">
+                                                    <img src="img/cerrad-loft-brick-cardamon-img-1.png" alt=""/>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="slider__image">
+                                                    <img src="img/cerrad-loft-brick-cardamon-img-1.png" alt=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slider__next">Next</div> <!-- Кнопка для переключения на следующий слайд -->
+
+                            </div>
+
+                            <div class="slider__images">
+                                <div class="swiper-container"> <!-- Слайдер с изображениями -->
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="slider__image">
+                                                <img src="img/cerrad-loft-brick-cardamon-img-1.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slider__image">
+                                                <img src="img/cerrad-loft-brick-cardamon-img-1.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slider__image">
+                                                <img src="img/cerrad-loft-brick-cardamon-img-1.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slider__image">
+                                                <img src="img/cerrad-loft-brick-cardamon-img-1.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slider__image">
+                                                <img src="img/cerrad-loft-brick-cardamon-img-1.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="productCard-info">
                         <div class="productCard-info__header">
                             <h2 class="productCard-title">Cerrad Loft brick, Cardamon</h2>
@@ -143,5 +218,7 @@
     <?php
         include($_SERVER['DOCUMENT_ROOT'] . '/blocks/footer.php');
     ?>
+    <script src="libs/swiper-bundle/swiper-bundle.min.js"></script>
+    <script src="js/productCard-slider.js"></script>
 </body>
 </html>
